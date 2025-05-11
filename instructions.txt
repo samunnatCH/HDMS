@@ -1,0 +1,4 @@
+LoginApp/build/ release ma .exe file chha euta tyo chai main executable file ho
+user credentials chai users.db ma saved xaa. passwords chai hashed garera save hunxa
+basic user login ra signup functionality banako xu test garna ko lagi.
+XD

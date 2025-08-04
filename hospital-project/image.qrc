@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>icons/email.png</file>
+
+        <file>icons/heart.png</file>
+        <file>icons/location.png</file>
+        <file>icons/person.png</file>
+        <file>icons/phone.png</file>
+        <file>icons/pressure.png</file>
+        <file>icons/sugar.png</file>
+        <file>icons/weight.png</file>
+        <file>icons/blood.png</file>
+        <file>icons/chol.png</file>
+        <file>icons/schedule.png</file>
+        <file>icons/medical.png</file>
+        <file>icons/logout.png</file>
+        <file>icons/appointment.png</file>
+        <file>icons/setting.png</file>
+        <file>icons/dashboard.png</file>
+    </qresource>
+    <qresource prefix="/image">
+        <file>resourse/profile.jpg</file>
+        <file>resourse/ui1.png</file>
+    </qresource>
+    <qresource prefix="/app_icon">
+            <file>icons/icon.jpeg</file> <!-- Or icons/app_icon.svg, etc. -->
+        </qresource>
+</RCC>

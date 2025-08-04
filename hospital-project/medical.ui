@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>medical</class>
+ <widget class="QWidget" name="medical">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1288</width>
+    <height>673</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#medical{
+background-color:#E5F0F7;
+}</string>
+  </property>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>0</y>
+     <width>1051</width>
+     <height>681</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#frame_2{
+
+background-color:#e0f2fe;
+
+
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QLabel" name="appointment">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>100</y>
+      <width>921</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Appointment&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+
+	
+background-color:#fff;
+border-radius:10px;
+margin:2px;
+padding:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="textl">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>50</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#textl{
+
+	font: 600 16pt &quot;Roboto&quot;;
+	background:transparent;
+color:black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Medical Records</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="viewrecords">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>50</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">  background-color: #DDDDDD;
+        color: black;
+        border-radius: 10px;
+        font-family: 'Segoe UI';
+        font-size: 14px;
+        font-weight: normal;
+        padding: 6px 12px;</string>
+    </property>
+    <property name="text">
+     <string>View</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="uploadrecords">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>50</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">  background-color: #DDDDDD;
+        color: black;
+        border-radius: 10px;
+        font-family: 'Segoe UI';
+        font-size: 14px;
+        font-weight: normal;
+        padding: 6px 12px;</string>
+    </property>
+    <property name="text">
+     <string>Upload</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="viewframe">
+    <property name="geometry">
+     <rect>
+      <x>39</x>
+      <y>99</y>
+      <width>921</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#bfdbfe;
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>100</y>
+       <width>861</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_7">
+        <property name="styleSheet">
+         <string notr="true">color:black;
+font: 16pt;</string>
+        </property>
+        <property name="text">
+         <string>View Medical Records</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="medicalRecordsTable">
+        <property name="styleSheet">
+         <string notr="true">border-radius:10px;
+background-color:#e0f2fe;
+	font: 200 16pt &quot;Roboto&quot;;
+	color:black;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QDateEdit" name="dateEdit">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>60</y>
+       <width>141</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:skyblue;
+background-color:solid;
+font: 16pt;</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>30</y>
+       <width>241</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;
+font: 16pt;</string>
+     </property>
+     <property name="text">
+      <string>Select Date</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="uploadframe">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>100</y>
+      <width>921</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#bfdbfe;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QLabel" name="statusLabel">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>110</y>
+       <width>351</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#statusLabel{
+
+	font: 200 16pt &quot;Roboto&quot;;
+	background:transparent;
+color:black;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Upload Medical Records</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="uploadReportButton">
+     <property name="geometry">
+      <rect>
+       <x>521</x>
+       <y>153</y>
+       <width>111</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+	background-color:#15803D;
+	color:#black;
+	font: 600 9pt &quot;Roboto&quot;;
+	border: 1px solid gray;
+	border-radius:8px;
+	padding:2px;
+
+
+	
+</string>
+     </property>
+     <property name="text">
+      <string>Upload Report</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_2">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>200</y>
+       <width>371</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#textBrowser_2{
+border-radius:10px;
+background-color:#e0f2fe;
+	font: 200 16pt &quot;Roboto&quot;;
+	color:black;
+}
+</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>appointment</zorder>
+   <zorder>textl</zorder>
+   <zorder>viewrecords</zorder>
+   <zorder>uploadrecords</zorder>
+   <zorder>uploadframe</zorder>
+   <zorder>viewframe</zorder>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>-10</y>
+     <width>251</width>
+     <height>741</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">frame{
+background-color:#0A2F5C;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QLabel" name="profile">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>40</y>
+      <width>141</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">front{
+	border-radus;20px
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/image/resourse/profile.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="background">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>-41</y>
+      <width>251</width>
+      <height>751</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#background{
+background-color:#0A2F5C;
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Dashboard">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>270</y>
+      <width>131</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color:black;
+		color:#fff;
+	font: 9pt &quot;Roboto&quot;;
+border-radius:5px;
+	
+}</string>
+    </property>
+    <property name="text">
+     <string>  Dashboard</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Schedule">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>370</y>
+      <width>131</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color:black;
+		color:#fff;
+	font: 9pt &quot;Roboto&quot;;
+border-radius:5px;
+	
+}</string>
+    </property>
+    <property name="text">
+     <string>Schedule</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Appointment">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>320</y>
+      <width>131</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color:black;
+		color:#fff;
+	font: 9pt &quot;Roboto&quot;;
+border-radius:5px;
+	
+	
+}</string>
+    </property>
+    <property name="text">
+     <string>      Appointments</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Settings">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>470</y>
+      <width>131</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color:black;
+		color:#fff;
+	font: 9pt &quot;Roboto&quot;;
+border-radius:5px;
+	
+}</string>
+    </property>
+    <property name="text">
+     <string>  Settings</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Medical_records">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>420</y>
+      <width>131</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QPushButton{
+	background-color:#269597;
+	color:#fff;
+	font:400  10pt &quot;Roboto&quot;;
+	border-radius:5px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Medical Records     </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logOut">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>620</y>
+      <width>131</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color:black;
+		color:#fff;
+	font: 9pt &quot;Roboto&quot;;
+border-radius:5px;
+	
+	
+}</string>
+    </property>
+    <property name="text">
+     <string>LogOut</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>67</x>
+      <y>270</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/icon/icons/dashboard.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>66</x>
+      <y>320</y>
+      <width>16</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/icon/icons/appointment.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>68</x>
+      <y>370</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/icon/icons/schedule.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>420</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/icon/icons/medical.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>470</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/icon/icons/setting.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>620</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/icon/icons/logout.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="patientIdLabel">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>230</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:transparent;
+color:white
+;
+font: 12pt &quot;Segoe UI&quot;;
+	border:none;</string>
+    </property>
+    <property name="text">
+     <string>Patient Id:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="usernameLabel">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>200</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:transparent;
+color:white
+;
+font: 12pt &quot;Segoe UI&quot;;
+	border:none;</string>
+    </property>
+    <property name="text">
+     <string>Username:</string>
+    </property>
+   </widget>
+   <zorder>background</zorder>
+   <zorder>profile</zorder>
+   <zorder>Dashboard</zorder>
+   <zorder>Schedule</zorder>
+   <zorder>Appointment</zorder>
+   <zorder>Settings</zorder>
+   <zorder>Medical_records</zorder>
+   <zorder>logOut</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>patientIdLabel</zorder>
+   <zorder>usernameLabel</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>viewrecords</sender>
+   <signal>clicked()</signal>
+   <receiver>viewframe</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>560</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>739</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>viewrecords</sender>
+   <signal>clicked()</signal>
+   <receiver>uploadframe</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>560</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>740</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>uploadrecords</sender>
+   <signal>clicked()</signal>
+   <receiver>uploadframe</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>695</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>740</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>uploadrecords</sender>
+   <signal>clicked()</signal>
+   <receiver>viewframe</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>695</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>739</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

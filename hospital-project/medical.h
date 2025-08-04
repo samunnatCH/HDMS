@@ -27,7 +27,7 @@ public:
 private slots:
     void on_Appointment_clicked();
     void on_Schedule_clicked();
-    void on_logout_clicked();
+    void on_logOut_clicked();
     void on_Settings_clicked();
     void on_Dashboard_clicked();
     void on_uploadReportButton_pressed();

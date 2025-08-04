@@ -316,7 +316,7 @@ void medical::on_Schedule_clicked()
     this->close();
 }
 
-void medical::on_logout_clicked()
+void medical::on_logOut_clicked()
 {
     Logout = new logout;
     Logout->setModal(true);
